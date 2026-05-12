@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "source_file": "Zaid_N_Ansari_RudderAnalytics_Resume.pdf",
+    "processed_at": "2026-04-30 15:47:43",
+    "sections_detected": [
+      "objective_summary",
+      "skills",
+      "education",
+      "projects"
+    ]
+  },
+  "personal_info": {
+    "name": "Zaid Nasiruddin Ansari",
+    "email": "ansari.n.zaid@gmail.com",
+    "phone": "+917768840106",
+    "linkedin": null,
+    "github": null,
+    "huggingface": null
+  },
+  "objective_summary": "Highlyanalyticalandimplementation-drivenDataScienceGraduateStudentwitharigorousCom-\nputerSciencefoundation. Equippedtotakecompleteownershipofthedatalifecycle,spanningData\nEngineeringpipelines,MachineLearning(ComputerVision&Audio),andconceptualunderstand-\ningofGenerativeAI(LLMs/RAG).Possessadistinct”startupmindset,”characterizedbytheabilityto\nrapidlylearnnewtechnologies,unlearnoutdatedparadigms,andarchitectactionablesolutions. Pas-\nsionateabouttranslatingcomplexdataintoBusinessIntelligenceinsightsanddeliveringimpeccable\nqualityacrossclienttouchpointsinafast-pacedenvironment.\n- TechnicalMastery: Achieved96%inProgramminginPython(Swayamcertification).\n- Adaptability & Problem Solving: Demonstrated extreme algorithmic agility and logic under\npressurein”BlindCoding”competitions.\n- ContinuousLearner: Deeplypassionateaboutthe”implementation”ofknowledge—constantly\nconceptualizing how disparate technologies (from rudimentary physics to modern GenAI) can\nbeintegratedtosolvecomplex,cross-domainproblems.\n2",
+  "skills": {
+    "technical": {
+      "Programming Languages": [
+        "bash",
+        "python",
+        "shell",
+        "sql"
+      ],
+      "Data Science & Machine Learning": [
+        "deep learning",
+        "nlp",
+        "prediction"
+      ],
+      "ML/DL Frameworks & Tools": [
+        "langchain",
+        "pytorch",
+        "tensorflow"
+      ],
+      "AI & Generative AI": [
+        "generative ai",
+        "large language model",
+        "llms",
+        "rag"
+      ],
+      "Data Engineering & ETL": [
+        "airflow",
+        "etl",
+        "pyspark",
+        "spark"
+      ],
+      "Cloud Platforms": [
+        "aws",
+        "gcp"
+      ],
+      "BI & Data Visualization": [
+        "dashboard",
+        "tableau"
+      ],
+      "Databases": [
+        "postgres",
+        "postgresql",
+        "redis"
+      ],
+      "DevOps & Infrastructure": [
+        "api",
+        "git",
+        "github",
+        "linux"
+      ],
+      "Web & App Frameworks": [
+        "django"
+      ],
+      "Data Libraries": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    "soft": [
+      "adaptability",
+      "communication",
+      "problem solving"
+    ],
+    "raw_text": "- Generative AI & NLP: Large Language Models (LLMs), RAG Architectures, LangChain, Prompt\nEngineering,VectorDBconcepts.\n- MachineLearning&CV:Python,PyTorch,TensorFlow,ComputerVision(YOLO),Speech/Au-\ndioRecognition(CNNs,Librosa).\n- DataEngineering&ETL:SQL,PostgreSQL,DataPipelineconcepts(Airflow/PySparkawareness),\nDataWarehousingconcepts(AWS/GCP).\n- BusinessIntelligence: Pandas,NumPy,DataAnalytics,Dashboardingconcepts(Tableau/Power\nBIawareness).\n- CoreCompetencies: Greatanalyticalandproblem-solvingskills,extremeeyeforminutedetails,\ncross-domainadaptability."
+  },
+  "experience": {
+    "raw_text": null,
+    "years_detected": 0
+  },
+  "projects": "PredictiveDataPipeline&IngestionSystem Python,SQL,Arduino,Bash\n- Architectedanend-to-enddatapipelineworkflowforreal-timesensordataingestion,enabling\ndownstreamfailureprediction.\n- Utilized SQL for structured data management and executed analytics to generate actionable\npredictiveinsights.\n- Automated server-side deployment and environment monitoring using Bash/Shell scripting\nonLinux,ensuringhighsystemreliability.\nMachineLearning&AudioDataPipeline(Research) Python,Librosa,DeepLearning\n- Developed a Deep Learning model to classify complex urban acoustic events, focusing heavily\nondatapipelineefficiency.\n- Preprocessed unstructured audio data into visual feature matrices (MFCCs/Spectrograms), ap-\nplyingcomplexsignalprocessingconcepts.\n- Implementedrigorousmodeltestingandevaluationstrategiestoensuredeterministicandac-\ncurateresultsacrosslargedatasets.\nReal-TimeAsyncCommunicationEngine Python,DjangoChannels,Redis\n- Engineered a high-performance asynchronous data flow system utilizing WebSockets for real-\ntimemessagedelivery.\n1\n- Optimized backend latency and data retrieval through Redis caching, handling efficient JSON\npackettransmission.\n- Developed robust API layers to manage high-concurrency events, taking complete ownership\nofthesystem’sarchitectureanddesign.\nRelevant Experience\nVirtualIntern-WebDevelopment&Backend OasisInfoByte\nOct2023–Nov2023\n- Builtdata-centricbackendmodules,bridgingthegapbetweendatabasearchitectureanduser-\nfacingfrontendsystems.\n- Developed an eye for minute details by managing strict code hygiene and version control (Git)\ninanagilesetup.",
+  "specialized_it": null,
+  "education": {
+    "raw_text": "Zaid Nasiruddin Ansari\nPune,MH,India|+917768840106|ansari.n.zaid@gmail.com\nLinkedIn: zaid-ansari-71a0a1292|GitHub: Zaid-N-Ansari\nProfessional Summary\nHighlyanalyticalandimplementation-drivenDataScienceGraduateStudentwitharigorousCom-\nputerSciencefoundation. Equippedtotakecompleteownershipofthedatalifecycle,spanningData\nEngineeringpipelines,MachineLearning(ComputerVision&Audio),andconceptualunderstand-\ningofGenerativeAI(LLMs/RAG).Possessadistinct”startupmindset,”characterizedbytheabilityto\nrapidlylearnnewtechnologies,unlearnoutdatedparadigms,andarchitectactionablesolutions. Pas-\nsionateabouttranslatingcomplexdataintoBusinessIntelligenceinsightsanddeliveringimpeccable\nqualityacrossclienttouchpointsinafast-pacedenvironment.\nTechnical Skills\n- Generative AI & NLP: Large Language Models (LLMs), RAG Architectures, LangChain, Prompt\nEngineering,VectorDBconcepts.\n- MachineLearning&CV:Python,PyTorch,TensorFlow,ComputerVision(YOLO),Speech/Au-\ndioRecognition(CNNs,Librosa).\n- DataEngineering&ETL:SQL,PostgreSQL,DataPipelineconcepts(Airflow/PySparkawareness),\nDataWarehousingconcepts(AWS/GCP).\n- BusinessIntelligence: Pandas,NumPy,DataAnalytics,Dashboardingconcepts(Tableau/Power\nBIawareness).\n- CoreCompetencies: Greatanalyticalandproblem-solvingskills,extremeeyeforminutedetails,\ncross-domainadaptability.\nEducation\nMasterofScienceinDataScience SavitribaiPhulePuneUniversity\nOngoing(Expected2026) CurrentCGPA:9.18\nFocus: MachineLearningAlgorithms,DataPipelines,AIModelOptimization,StatisticalAnalysis.\nBachelorofScienceinComputerScience NowrosjeeWadiaCollege,Pune\nGraduated2024 CGPA:9.08(Grade: A+)\nFocus: CoreProgramming,DatabaseManagementSystems,DataStructures&Algorithms.\nProjects\nPredictiveDataPipeline&IngestionSystem Python,SQL,Arduino,Bash\n- Architectedanend-to-enddatapipelineworkflowforreal-timesensordataingestion,enabling\ndownstreamfailureprediction.\n- Utilized SQL for structured data management and executed analytics to generate actionable\npredictiveinsights.\n- Automated server-side deployment and environment monitoring using Bash/Shell scripting\nonLinux,ensuringhighsystemreliability.\nMachineLearning&AudioDataPipeline(Research) Python,Librosa,DeepLearning\n- Developed a Deep Learning model to classify complex urban acoustic events, focusing heavily\nondatapipelineefficiency.\n- Preprocessed unstructured audio data into visual feature matrices (MFCCs/Spectrograms), ap-\nplyingcomplexsignalprocessingconcepts.\n- Implementedrigorousmodeltestingandevaluationstrategiestoensuredeterministicandac-\ncurateresultsacrosslargedatasets.\nReal-TimeAsyncCommunicationEngine Python,DjangoChannels,Redis\n- Engineered a high-performance asynchronous data flow system utilizing WebSockets for real-\ntimemessagedelivery.\n1\n- Optimized backend latency and data retrieval through Redis caching, handling efficient JSON\npackettransmission.\n- Developed robust API layers to manage high-concurrency events, taking complete ownership\nofthesystem’sarchitectureanddesign.\nRelevant Experience\nVirtualIntern-WebDevelopment&Backend OasisInfoByte\nOct2023–Nov2023\n- Builtdata-centricbackendmodules,bridgingthegapbetweendatabasearchitectureanduser-\nfacingfrontendsystems.\n- Developed an eye for minute details by managing strict code hygiene and version control (Git)\ninanagilesetup.\nAchievements & Behavioral Profile\n- TechnicalMastery: Achieved96%inProgramminginPython(Swayamcertification).\n- Adaptability & Problem Solving: Demonstrated extreme algorithmic agility and logic under\npressurein”BlindCoding”competitions.\n- ContinuousLearner: Deeplypassionateaboutthe”implementation”ofknowledge—constantly\nconceptualizing how disparate technologies (from rudimentary physics to modern GenAI) can\nbeintegratedtosolvecomplex,cross-domainproblems.\n2",
+    "highest_degree": "ME",
+    "certifications": []
+  },
+  "certifications": null,
+  "achievements": null,
+  "research": null,
+  "activities": null,
+  "additional_sections": null,
+  "references": null
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "source_file": "Tejaswini_resume (2).pdf",
+    "processed_at": "2026-04-30 15:47:43",
+    "sections_detected": [
+      "objective_summary",
+      "education",
+      "skills",
+      "experience",
+      "projects",
+      "certifications"
+    ]
+  },
+  "personal_info": {
+    "name": "Tejaswini Adasule",
+    "email": "tejaswiniadasule07@gmail.com",
+    "phone": "+917276622426",
+    "linkedin": null,
+    "github": null,
+    "huggingface": null
+  },
+  "objective_summary": "Motivated and detail-oriented Computer Science graduate with hands-on experience in data analysis, SQL querying,\nand dashboard development. Skilled in Python, data preprocessing, and exploratory data analysis (EDA) to extract\nactionable insights. Strong problem-solving abilities with experience working in collaborative environments. Eager\nto leverage analytical skills to drive data-driven decision-making.",
+  "skills": {
+    "technical": {
+      "Programming Languages": [
+        "css",
+        "html",
+        "java",
+        "php",
+        "python",
+        "sql"
+      ],
+      "Data Science & Machine Learning": [
+        "data analysis",
+        "deep learning",
+        "machine learning",
+        "regression"
+      ],
+      "ML/DL Frameworks & Tools": [
+        "scikit-learn"
+      ],
+      "AI & Generative AI": [
+        "prompt engineering"
+      ],
+      "BI & Data Visualization": [
+        "dashboard",
+        "dashboards",
+        "matplotlib",
+        "power bi",
+        "seaborn"
+      ],
+      "Databases": [
+        "mysql"
+      ],
+      "DevOps & Infrastructure": [
+        "api",
+        "git"
+      ],
+      "Data Libraries": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    "soft": [],
+    "raw_text": "Programming: Python, C, Java, SQL\nData Analysis & ML: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn\nDatabases: MySQL, Relational Database Design, SQL Queries\nWeb Technologies: HTML, CSS, PHP\nCore Concepts: OOP, Data Structures and Algorithms\nTools: Jupyter Notebook, VS Code, Power BI, Excel, Git"
+  },
+  "experience": {
+    "raw_text": "Chromatus Consultancy Pune, Maharashtra\n– Cleaned and preprocessed datasets (5,000+ records) to improve reporting accuracy.\n– Performed exploratory data analysis (EDA) to identify trends and actionable insights.\n– Developed interactive dashboards using Excel and Power BI to track KPIs and performance metrics.\n– Wrote optimized SQL queries to extract and analyze structured data from relational databases.\n– Collaborated with cross-functional teams to translate business requirements into analytical solutions.",
+    "years_detected": 0
+  },
+  "projects": "Property Management System | HTML, CSS, PHP, MySQL Jan 2024\n– Designed and developed a responsive web interface for property and tenant management.\n– Designed relational database schema for properties, tenants, leases, and payments.\n– Integrated rent payment tracking and automated overdue notifications.\n– Implemented user authentication and role-based access (Admin, Tenant).\nCustomer Churn Analysis and Retention Insights | Python, SQL, Scikit-learn 2025\n– Conducted EDA to analyze customer demographics, usage patterns, and subscription behavior.\n– Identified key factors contributing to churn using correlation and feature importance analysis.\n– Built a Logistic Regression model to predict high-risk customers.\n– Evaluated model performance using accuracy, precision, recall, and confusion matrix.",
+  "specialized_it": null,
+  "education": {
+    "raw_text": "Tejaswini Adasule\nPhone +91-7276622426 Envelope tejaswiniadasule07@gmail.com LINKEDIN linkedin.com/in/tejaswini-adsule-068a5b217\nSummary\nMotivated and detail-oriented Computer Science graduate with hands-on experience in data analysis, SQL querying,\nand dashboard development. Skilled in Python, data preprocessing, and exploratory data analysis (EDA) to extract\nactionable insights. Strong problem-solving abilities with experience working in collaborative environments. Eager\nto leverage analytical skills to drive data-driven decision-making.\nEducation\nB.Sc. in Computer Science Graduated: 2024\nSavitribai Phule Pune University, Maharashtra CGPA: 8.24 / 10\nTechnical Skills\nProgramming: Python, C, Java, SQL\nData Analysis & ML: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn\nDatabases: MySQL, Relational Database Design, SQL Queries\nWeb Technologies: HTML, CSS, PHP\nCore Concepts: OOP, Data Structures and Algorithms\nTools: Jupyter Notebook, VS Code, Power BI, Excel, Git\nExperience\nData Analyst Intern Feb 2025 – July 2025\nChromatus Consultancy Pune, Maharashtra\n– Cleaned and preprocessed datasets (5,000+ records) to improve reporting accuracy.\n– Performed exploratory data analysis (EDA) to identify trends and actionable insights.\n– Developed interactive dashboards using Excel and Power BI to track KPIs and performance metrics.\n– Wrote optimized SQL queries to extract and analyze structured data from relational databases.\n– Collaborated with cross-functional teams to translate business requirements into analytical solutions.\nProjects\nProperty Management System | HTML, CSS, PHP, MySQL Jan 2024\n– Designed and developed a responsive web interface for property and tenant management.\n– Designed relational database schema for properties, tenants, leases, and payments.\n– Integrated rent payment tracking and automated overdue notifications.\n– Implemented user authentication and role-based access (Admin, Tenant).\nCustomer Churn Analysis and Retention Insights | Python, SQL, Scikit-learn 2025\n– Conducted EDA to analyze customer demographics, usage patterns, and subscription behavior.\n– Identified key factors contributing to churn using correlation and feature importance analysis.\n– Built a Logistic Regression model to predict high-risk customers.\n– Evaluated model performance using accuracy, precision, recall, and confusion matrix.\nCertifications\n• Artificial Intelligence Teachnook (July 2024): Training in Machine Learning, Deep Learning fundamentals, and AI\nmodel development with hands-on implementation using Python.\n• OpenAI GPT-3 for Developers Infosys Springboard (June 2025): Learned prompt engineering, API integration,\nand development of AI-powered applications including chatbots and text generation tools.",
+    "highest_degree": "BSC",
+    "certifications": []
+  },
+  "certifications": "• Artificial Intelligence Teachnook (July 2024): Training in Machine Learning, Deep Learning fundamentals, and AI\nmodel development with hands-on implementation using Python.\n• OpenAI GPT-3 for Developers Infosys Springboard (June 2025): Learned prompt engineering, API integration,\nand development of AI-powered applications including chatbots and text generation tools.",
+  "achievements": null,
+  "research": null,
+  "activities": null,
+  "additional_sections": null,
+  "references": null
+}

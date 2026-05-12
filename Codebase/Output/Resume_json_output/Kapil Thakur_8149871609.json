@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "source_file": "Kapil Thakur_8149871609.pdf",
+    "processed_at": "2026-04-30 15:47:42",
+    "sections_detected": [
+      "objective_summary",
+      "skills",
+      "experience",
+      "specialized_it",
+      "education",
+      "projects",
+      "research",
+      "achievements"
+    ]
+  },
+  "personal_info": {
+    "name": "Kapil Thakur",
+    "email": "kapilthakur29.01@gmail.com",
+    "phone": "+918149871609",
+    "linkedin": null,
+    "github": null,
+    "huggingface": null
+  },
+  "objective_summary": "Pursuing MSc in Data Science at Savitribai Phule Pune University, with hands-on experience in conversational AI and chat/voice bot development.\nSkilled in Python, machine learning with a passion for solving real-world problems through innovative AI solutions. Seeking opportunities to apply\nadvanced data science knowledge and practical experience in impactful roles.",
+  "skills": {
+    "technical": {
+      "Programming Languages": [
+        "python",
+        "r"
+      ],
+      "Data Science & Machine Learning": [
+        "computer vision",
+        "data science",
+        "machine learning",
+        "natural language processing"
+      ],
+      "ML/DL Frameworks & Tools": [
+        "opencv"
+      ],
+      "BI & Data Visualization": [
+        "matplotlib"
+      ],
+      "Databases": [
+        "mysql",
+        "postgres",
+        "postgresql"
+      ],
+      "DevOps & Infrastructure": [
+        "github"
+      ],
+      "Web & App Frameworks": [
+        "fastapi",
+        "react"
+      ],
+      "Data Libraries": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    "soft": [
+      "communication",
+      "leadership"
+    ],
+    "raw_text": "• Programming Languages: Python, R, C Programming (also for embedding systems).\n• Databases: PostgreSQL, MySQL.\n• Data Science Tools: Pandas, NumPy, Matplotlib, OpenCV.\n• AI/ML Technologies: DialogFlow CX, Natural Language Processing, Conversational AI.\n• DSA Knowledge: Proficient in data structures and algorithms (in C and Python)."
+  },
+  "experience": {
+    "raw_text": "",
+    "years_detected": 0
+  },
+  "projects": "Department of Technology CGPA:8.59\nMasters in Data science (MSc DS) (Pursuing)",
+  "specialized_it": "• Got to know what is POC (proof of Concept), how to document findings, prototyping and implementing features.\n• Engineered a full-cycle Conversational AI Voice Bot for recruitment automation, successfully transitioning the solution from proof-of-\nconcept to a production environment.\n• Integrated key platforms including Google DialogFlow CX with Twilio telephony services and implemented multi-regional English support\n(EN-IN, EN-GB, EN-US) to enable seamless user interactions and boost engagement.\n• This project reduced manual screening time by an estimated 30%, boosting efficiency for a monthly candidate pipeline of over 1,000.\n• Developed a robust Python FastAPI backend to support real-time voice communication.\n• Configured complex system integrations, including Virtual Agent Widget setup and TwiML parameters, and collaborated with cross-\nfunctional teams on React frontend development and system deployment.",
+  "education": {
+    "raw_text": "Kapil Thakur\nPune | +918149871609 | kapilthakur29.01@gmail.com | LinkedIn | GitHub\nSUMMARY\nPursuing MSc in Data Science at Savitribai Phule Pune University, with hands-on experience in conversational AI and chat/voice bot development.\nSkilled in Python, machine learning with a passion for solving real-world problems through innovative AI solutions. Seeking opportunities to apply\nadvanced data science knowledge and practical experience in impactful roles.\nTECHNICAL SKILLS\n• Programming Languages: Python, R, C Programming (also for embedding systems).\n• Databases: PostgreSQL, MySQL.\n• Data Science Tools: Pandas, NumPy, Matplotlib, OpenCV.\n• AI/ML Technologies: DialogFlow CX, Natural Language Processing, Conversational AI.\n• DSA Knowledge: Proficient in data structures and algorithms (in C and Python).\nINTERNSHIP EXPERIENCE\nData Science Intern | Thinqloud Solutions | Link Mar 2025 - Jun 2025\n• Got to know what is POC (proof of Concept), how to document findings, prototyping and implementing features.\n• Engineered a full-cycle Conversational AI Voice Bot for recruitment automation, successfully transitioning the solution from proof-of-\nconcept to a production environment.\n• Integrated key platforms including Google DialogFlow CX with Twilio telephony services and implemented multi-regional English support\n(EN-IN, EN-GB, EN-US) to enable seamless user interactions and boost engagement.\n• This project reduced manual screening time by an estimated 30%, boosting efficiency for a monthly candidate pipeline of over 1,000.\n• Developed a robust Python FastAPI backend to support real-time voice communication.\n• Configured complex system integrations, including Virtual Agent Widget setup and TwiML parameters, and collaborated with cross-\nfunctional teams on React frontend development and system deployment.\nEDUCATION\nIndira College of Commerce and Science, Wakad, Pune. Aug 2021- May 2024\nBachelors in computer science (BSc CS) CGPA:8.59\nSavitribai Phule Pune University, Pune. Aug2024 - July 2026\nDepartment of Technology CGPA:8.59\nMasters in Data science (MSc DS) (Pursuing)\nRESEARCH & PUBLICATIONS\nTitle: IoT-Based Computer Vision System for Real-time Face Recognition and Detection.\nISSN: 2583-6404 Focus: Computer Vision, IoT Integration, Real-time Processing.\n• Focus: Computer Vision, IoT Integration, Real-time Processing, Cost Reduction.\n• System Goal: Implemented a real-time system using Python libraries (Computer Vision) and IoT tools to demonstrate a proof-of-concept\n(PoC) for reducing hardware costing by utilizing specific modules like the ESP-32.\n• Key Finding: The PoC confirmed the technical viability of using IoT integration to reduce the hardware cost of System.\nKEY ACHIEVEMENTS AS A FRESHER-\n• Completed a POC on Voice bot and planned the voice bot for recruiters, directed to call candidate and ask candidate information and\nsome relevant questions depending on answer.\n• Achieved CGPA of 8.59 (Grade: A+) in bachelor’s degree.\n• Published research paper on IoT-based computer vision systems.\n• Led and hosted college-level fests as EMC (Event Management Committee) Head for 2 consecutive years, successfully managing end-to-\nend event execution, coordination, and team leadership.",
+    "highest_degree": "MSC",
+    "certifications": []
+  },
+  "certifications": null,
+  "achievements": "• Completed a POC on Voice bot and planned the voice bot for recruiters, directed to call candidate and ask candidate information and\nsome relevant questions depending on answer.\n• Achieved CGPA of 8.59 (Grade: A+) in bachelor’s degree.\n• Published research paper on IoT-based computer vision systems.\n• Led and hosted college-level fests as EMC (Event Management Committee) Head for 2 consecutive years, successfully managing end-to-\nend event execution, coordination, and team leadership.",
+  "research": "Title: IoT-Based Computer Vision System for Real-time Face Recognition and Detection.\nISSN: 2583-6404 Focus: Computer Vision, IoT Integration, Real-time Processing.\n• Focus: Computer Vision, IoT Integration, Real-time Processing, Cost Reduction.\n• System Goal: Implemented a real-time system using Python libraries (Computer Vision) and IoT tools to demonstrate a proof-of-concept\n(PoC) for reducing hardware costing by utilizing specific modules like the ESP-32.\n• Key Finding: The PoC confirmed the technical viability of using IoT integration to reduce the hardware cost of System.",
+  "activities": null,
+  "additional_sections": null,
+  "references": null
+}

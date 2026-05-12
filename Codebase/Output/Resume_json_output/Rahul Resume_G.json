@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "source_file": "Rahul Resume_G.pdf",
+    "processed_at": "2026-04-30 15:47:43",
+    "sections_detected": [
+      "education",
+      "skills",
+      "achievements",
+      "projects",
+      "activities"
+    ]
+  },
+  "personal_info": {
+    "name": "Rahul Inchal",
+    "email": "rahul.inchal24@gmail.com",
+    "phone": "+919584827982",
+    "linkedin": null,
+    "github": "https://github.com/rahulinchal/",
+    "huggingface": null
+  },
+  "objective_summary": null,
+  "skills": {
+    "technical": {
+      "Programming Languages": [
+        "python",
+        "r",
+        "sql"
+      ],
+      "Data Science & Machine Learning": [
+        "classification",
+        "clustering",
+        "data analytics",
+        "data science",
+        "deep learning",
+        "machine learning",
+        "prediction",
+        "regression"
+      ],
+      "Data Engineering & ETL": [
+        "apache spark",
+        "data pipeline",
+        "data pipelines",
+        "hadoop",
+        "hive",
+        "spark"
+      ],
+      "BI & Data Visualization": [
+        "data visualization",
+        "power bi",
+        "tableau"
+      ],
+      "DevOps & Infrastructure": [
+        "github"
+      ]
+    },
+    "soft": [],
+    "raw_text": "Languages Python, SQL, R\nMachine Learning Supervised & Unsupervised ML Algorithms, SVMs, Logistic Regression and Linear\nRegression, Clustering and Decision Tree, Bagging and Boosting.\nBig Data Tools Hadoop, Apache Spark, HDFS, Apache Hive\nVisualising Tools Tableau, Power BI, Microsoft Excel, Jupyter Notebook, Google Colab\nDeep Learning FNN, CNN, RNN, LSTM\nProfessional Experience and Internships\n1. Quality Analyst | EagleView, Bengaluru Aug 2020 - Jul 2023\n• Leveraged Power BI and Tableau to create Data visualizations that improved productivity by 20%.\n• Was involved in cleaning the dataset using Python to reduce the null values to 0.\n• Gained proficiency in Quality Analysis and Reporting through cross-training, reducing response time by 20% and\nenabling effective support across multiple departments.\n• Analysed market data from 10+ sources, improving business decisions by 15%."
+  },
+  "experience": {
+    "raw_text": null,
+    "years_detected": 0
+  },
+  "projects": "Deep Learning • Implemented Convolutional neural network model for Alzheimer’s disease detection,\nachieving a 97% accuracy rate. Link\nSeoul Bike • Executed Machine Learning algorithms for getting the accuracy till 99% using Random\nSharing Demand Forest Regressor.\nPrediction. • Utilised ML techniques such as Linear Regression, Logistic Regression, Decision Tree, and\nGradient Boosting to optimize model accuracy Link\nDry Bean Machine Learning and Statistical techniques (Cross Validation, Ensemble Learning) to boost\nClassification. the accuracy from 64% to 93%. Link\nPower Bi and Tableau and Power BI to Visualise the dataset such as sales, airline price prediction, and HR\nTableau data analytics. Tableau and Power BI\nSQL (Structured Used SQL techniques, including sorting, aggregation, and joins, and Windows Function to\nQuery Language) build and analyze a Library Database. Link",
+  "specialized_it": null,
+  "education": {
+    "raw_text": "Rahul Inchal\nPhone: +91-9584827982 E-Mail - rahul.inchal24@gmail.com\nLinkedIn: linkedin.com/in/rahulinchal Github - https://github.com/rahulinchal/\nEducation\nYear Course Institute\n2023 - 2025 M.Sc. Data Science and Big Data Analytics MIT World Peace University Pune\n2016 - 2020 B.E (ECE) KLE Dr MS Sheshgiri Institute of Technology Belagavi\n2016 Class XII Army Public School Mhow(MP)\nSkills\nLanguages Python, SQL, R\nMachine Learning Supervised & Unsupervised ML Algorithms, SVMs, Logistic Regression and Linear\nRegression, Clustering and Decision Tree, Bagging and Boosting.\nBig Data Tools Hadoop, Apache Spark, HDFS, Apache Hive\nVisualising Tools Tableau, Power BI, Microsoft Excel, Jupyter Notebook, Google Colab\nDeep Learning FNN, CNN, RNN, LSTM\nProfessional Experience and Internships\n1. Quality Analyst | EagleView, Bengaluru Aug 2020 - Jul 2023\n• Leveraged Power BI and Tableau to create Data visualizations that improved productivity by 20%.\n• Was involved in cleaning the dataset using Python to reduce the null values to 0.\n• Gained proficiency in Quality Analysis and Reporting through cross-training, reducing response time by 20% and\nenabling effective support across multiple departments.\n• Analysed market data from 10+ sources, improving business decisions by 15%.\n2. Data Science Intern | Antwalk Cyberverse Nov 2024 - Present\n• Built predictive models on 10,000+ records, boosting decision accuracy by 15%.\n• Designed 5+ data pipelines, improving data processing efficiency by 20%.\n• Optimised workflows with ML, enhancing accuracy by 10% and cutting processing time by 25%.\n• Streamlined data collection and visualisation with Excel and Power Bi, reducing processing time by 20%.\n• Identified market trends, boosting client strategy effectiveness by 10%.\nProjects\nDeep Learning • Implemented Convolutional neural network model for Alzheimer’s disease detection,\nachieving a 97% accuracy rate. Link\nSeoul Bike • Executed Machine Learning algorithms for getting the accuracy till 99% using Random\nSharing Demand Forest Regressor.\nPrediction. • Utilised ML techniques such as Linear Regression, Logistic Regression, Decision Tree, and\nGradient Boosting to optimize model accuracy Link\nDry Bean Machine Learning and Statistical techniques (Cross Validation, Ensemble Learning) to boost\nClassification. the accuracy from 64% to 93%. Link\nPower Bi and Tableau and Power BI to Visualise the dataset such as sales, airline price prediction, and HR\nTableau data analytics. Tableau and Power BI\nSQL (Structured Used SQL techniques, including sorting, aggregation, and joins, and Windows Function to\nQuery Language) build and analyze a Library Database. Link\nActivities\n• Published the Paper on Alzheimer’s detection using CNN model in June 2024 with 97% accuracy.\n• Class Representative for M.Sc. Data Science and Big Data Analytics for the year 2023 - 2025.\n• Student Placement Coordinator for M.Sc. Data Science and Big Data Analytics for the year 2024 - 2025.",
+    "highest_degree": "MSC",
+    "certifications": []
+  },
+  "certifications": null,
+  "achievements": "• Built predictive models on 10,000+ records, boosting decision accuracy by 15%.\n• Designed 5+ data pipelines, improving data processing efficiency by 20%.\n• Optimised workflows with ML, enhancing accuracy by 10% and cutting processing time by 25%.\n• Streamlined data collection and visualisation with Excel and Power Bi, reducing processing time by 20%.\n• Identified market trends, boosting client strategy effectiveness by 10%.",
+  "research": null,
+  "activities": "• Published the Paper on Alzheimer’s detection using CNN model in June 2024 with 97% accuracy.\n• Class Representative for M.Sc. Data Science and Big Data Analytics for the year 2023 - 2025.\n• Student Placement Coordinator for M.Sc. Data Science and Big Data Analytics for the year 2024 - 2025.",
+  "additional_sections": null,
+  "references": null
+}

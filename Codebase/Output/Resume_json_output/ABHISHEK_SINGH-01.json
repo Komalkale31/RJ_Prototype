@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "source_file": "ABHISHEK_SINGH-01.pdf",
+    "processed_at": "2026-04-30 15:47:41",
+    "sections_detected": [
+      "education",
+      "projects",
+      "skills",
+      "certifications"
+    ]
+  },
+  "personal_info": {
+    "name": "ABHISHEK SINGH",
+    "email": "abhisheksingh200212@gmail..com",
+    "phone": "+918840087424",
+    "linkedin": null,
+    "github": null,
+    "huggingface": null
+  },
+  "objective_summary": null,
+  "skills": {
+    "technical": {
+      "Programming Languages": [
+        "python",
+        "sql"
+      ],
+      "Data Science & Machine Learning": [
+        "data analysis",
+        "data science",
+        "machine learning",
+        "prediction",
+        "regression"
+      ],
+      "ML/DL Frameworks & Tools": [
+        "scikit-learn"
+      ],
+      "BI & Data Visualization": [
+        "dashboard",
+        "dashboards",
+        "matplotlib",
+        "power bi",
+        "seaborn"
+      ],
+      "Data Libraries": [
+        "numpy",
+        "pandas"
+      ],
+      "Domain Knowledge": [
+        "sports"
+      ]
+    },
+    "soft": [],
+    "raw_text": "Programming: Python, SQL\nData Analysis and Visualization: Machine Learning, Power BI\nLibrary: Numpy, Matplotlib, Seaborn,\nTools: Jupyter Notebook, Google Colab, Excel\nTeam Player, Quick Learner\nExplorer, Good Communicator"
+  },
+  "experience": {
+    "raw_text": null,
+    "years_detected": 0
+  },
+  "projects": "Global Superstore Analysis: •Tools: MS SQL\n•Analyzedsalesdatafromafictionalglobalretailcompanytoidentifysalestrends,customerbehavior,andproduct\nperformance. Insights extracted on geographical variations and recommendations for business optimization.\nEmployee Dataset Dashboard: •Tools: MS Excel, Power BI.\n• Developed interactive dashboards to analyze employee attrition, satisfaction, productivity, and engagement.\nIdentified key factors impacting workforce performance using visualizations and data analysis techniques.\nHealth Insurance Cost Prediction: • Tools: Python, Jupyter Notebook, Pandas, Seaborn, Scikit-learn.\n• Performed exploratory data analysis (EDA) on a health insurance dataset to identify key cost-driving factors\nsuch as age, BMI, and smoking habits.\n• Built and evaluated machine learning models (Linear Regression, Random Forest) to accurately predict medical\ninsurance charges.\n• Extracted actionable insights to understand how lifestyle factors impact healthcare costs, which can aid in risk\nassessment and personalized premium setting.",
+  "specialized_it": null,
+  "education": {
+    "raw_text": "ABHISHEK SINGH\nPune – Maharashtra – India\nI +91 8840087424 • # abhisheksingh200212@gmail..com\n§ abhisheksingh25800 • (cid:240) abhishek-singh-14b8a9290\nObjective\nData Science Enthusiast with strong foundations in Python, SQL, Statistics, and Machine Learning. Skilled\nin analyzing data, building insights through Power BI, and eager to apply analytical skills to solve real-world\nbusiness problems.\nEducation\nModern College Of Art,Science And Commerce Pune\nBachelor of Computer Application, CGPA – 8.5 2020–2023\nSavitraibai Phule Pune University Pune\nMasters of Science, CGPA – Pursuing 2024–2026\nProjects\nGlobal Superstore Analysis: •Tools: MS SQL\n•Analyzedsalesdatafromafictionalglobalretailcompanytoidentifysalestrends,customerbehavior,andproduct\nperformance. Insights extracted on geographical variations and recommendations for business optimization.\nEmployee Dataset Dashboard: •Tools: MS Excel, Power BI.\n• Developed interactive dashboards to analyze employee attrition, satisfaction, productivity, and engagement.\nIdentified key factors impacting workforce performance using visualizations and data analysis techniques.\nHealth Insurance Cost Prediction: • Tools: Python, Jupyter Notebook, Pandas, Seaborn, Scikit-learn.\n• Performed exploratory data analysis (EDA) on a health insurance dataset to identify key cost-driving factors\nsuch as age, BMI, and smoking habits.\n• Built and evaluated machine learning models (Linear Regression, Random Forest) to accurately predict medical\ninsurance charges.\n• Extracted actionable insights to understand how lifestyle factors impact healthcare costs, which can aid in risk\nassessment and personalized premium setting.\nSkills\nProgramming: Python, SQL\nData Analysis and Visualization: Machine Learning, Power BI\nLibrary: Numpy, Matplotlib, Seaborn,\nTools: Jupyter Notebook, Google Colab, Excel\nSoft Skills\nTeam Player, Quick Learner\nExplorer, Good Communicator\nCourses\nData Science Professional Certificate: Completed Six Month Bootcamp By OdinSchool.\nInterests\nSports: Playing cricket in my free time.\nBooks: Reading Non-Fictional Books\nPodcast: Listening to knowledgeable podcast",
+    "highest_degree": "MASTER",
+    "certifications": []
+  },
+  "certifications": "Data Science Professional Certificate: Completed Six Month Bootcamp By OdinSchool.\nInterests\nSports: Playing cricket in my free time.\nBooks: Reading Non-Fictional Books\nPodcast: Listening to knowledgeable podcast",
+  "achievements": null,
+  "research": null,
+  "activities": null,
+  "additional_sections": null,
+  "references": null
+}

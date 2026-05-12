@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "source_file": "job_description.txt",
+    "processed_at": "2026-04-30 15:47:40",
+    "sections_detected": [
+      "experience_required",
+      "eligibility",
+      "responsibilities",
+      "good_to_have",
+      "process"
+    ]
+  },
+  "company_info": {
+    "name": "RUDDER analytics",
+    "location": [
+      "Pune"
+    ],
+    "raw_text": null
+  },
+  "role_summary": {
+    "title": "Unknown",
+    "raw_text": null
+  },
+  "responsibilities": {
+    "key_points": [],
+    "raw_text": "Interface with clients across geographies and business verticals, understand their business objectives and provide actionable and implementable solutions.\nDesign and develop Business Intelligence dashboards using Tableau, Microsoft Power BI, Qlik Sense, Domo, Looker etc.\nData Engineering development and data ETL/ELT process build through Talend, Fivetran, Airbyte etc.\nBuilding data pipelines using PySpark, Apache Nifi, Airflow etc;\nData warehousing using cloud services like Amazon AWS Redshift, Google GCP BigQuery, Microsoft Azure ADLS etc.\nLarge-scale Al Agent development with LLMS, RAG, Vector DBs.\nMachine Learning for computer vision, speech recognition, prediction using various tools and platforms including Python, PyTorch, LangChain, Vertex Al etc.\nData analytics, insights generation, and client advisory on multiple domains including Ecommerce, Telecom, BFSI, Pharmaceuticals, Manufacturing, Media, Sports etc.\nTake complete ownership of projects, be resourceful to design and implement solution with impeccable quality and delight clients at each touchpoint through great communication and solution delivery."
+  },
+  "required_skills": {
+    "technical": {},
+    "raw_text": null
+  },
+  "good_to_have": {
+    "technical": {},
+    "raw_text": "Ability to adapt and thrive in a fast paced and demanding environment of a young start-up.\nAbility to learn, unlearn and relearn.\nEye for minute details.\nPassion to master new technologies and methodologies.\nGreat analytical and problem-solving skills.\nCTC: 5L\n*4.20 LPA + 80 K Joining Bonus"
+  },
+  "eligibility": {
+    "batch_year": "2026",
+    "degrees_required": [
+      "MSC",
+      "ME",
+      "MTECH",
+      "MCA"
+    ],
+    "min_percentage": "65%",
+    "raw_text": "2026 Passout Batch Only\ni. MCA/ME/MTech/MSc(Computers) (Candidate should have basic knowledge of Programming)\nMinimum 65% till last semester"
+  },
+  "experience_required": {
+    "years": 0,
+    "raw_text": "Location: Pune (work from home till further notice)"
+  },
+  "benefits": {
+    "ctc": null,
+    "raw_text": null
+  },
+  "domains": [],
+  "process": "Round 1: MCQ (Aptitude & Technical), duration: 90 minutes\nRound 2: Programming test for shortlisted candidates, duration: 90 minutes (CS/IT Students only)\nRound 3: Group Discussion and Personal interview for shortlisted candidates",
+  "expectations": null,
+  "work_environment": null,
+  "legal_closing": null
+}
