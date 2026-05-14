@@ -1,6 +1,3 @@
-from datetime import datetime
-from .config import MODEL_NAME, WEIGHT_CONTEXT, WEIGHT_SKILLS, WEIGHT_ELIGIB
-
 def get_category_for_skill(skill, req_tech_dict):
     for cat, skills in req_tech_dict.items():
         if skill in skills:
@@ -73,68 +70,3 @@ def generate_smart_feedback(final_score, skill_score, context_score, elig_score,
         lines.append("NOTE: Your overall experience 'sounds' relevant to this role, but you are missing many specific tools and technologies mentioned in the JD. Focus on hands-on projects with those exact tools to bridge this gap.")
         
     return lines
-
-def generate_full_report(results):
-    lines = []
-    lines.append("INTELLIGENT RESUME-JD MATCHING REPORT")
-    lines.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    lines.append(f"Model: {MODEL_NAME}")
-    lines.append(f"Scoring: {int(WEIGHT_CONTEXT*100)}% Semantic + {int(WEIGHT_SKILLS*100)}% Skill + {int(WEIGHT_ELIGIB*100)}% Education")
-    lines.append("=" * 70)
-    
-    for rank, r in enumerate(results, 1):
-        if r["final_pct"] >= 75:
-            verdict = "STRONG MATCH"
-        elif r["final_pct"] >= 55:
-            verdict = "MODERATE MATCH"
-        elif r["final_pct"] >= 35:
-            verdict = "DEVELOPING MATCH"
-        else:
-            verdict = "LOW MATCH"
-
-        lines.append("")
-        lines.append(f"RANK #{rank}")
-        lines.append(f"Candidate : {r['name']}")
-        lines.append(f"Score     : {r['final_pct']}%  [{verdict}]")
-        lines.append("")
-        
-        if r['matched_skills']:
-            lines.append("SKILLS YOU HAVE (that the JD wants):")
-            lines.append(f"  {', '.join(sorted(r['matched_skills']))}")
-            lines.append("")
-            
-        if r['missing_skills']:
-            lines.append("SKILLS YOU ARE MISSING:")
-            lines.append(f"  {', '.join(sorted(r['missing_skills']))}")
-            lines.append("")
-            
-        if r['top_improvements']:
-            lines.append("YOUR GROWTH PATH (What to Learn Next):")
-            for idx, imp in enumerate(r['top_improvements'], 1):
-                lines.append(f"  #{idx}  Learn {imp['skill'].title():<22} +{round(imp['impact_pct']*100, 1)}%  ({r['final_pct']}% -> {round(imp['new_pct']*100, 1)}%)")
-                
-            if len(r['top_improvements']) >= 2:
-                total_pot = r['final_pct'] + sum(round(i['impact_pct']*100, 1) for i in r['top_improvements'])
-                lines.append("")
-                lines.append(f"  Potential score with all above: ~{round(min(total_pot, 99.9), 1)}%")
-            lines.append("")
-            
-        lines.append("PERSONALIZED FEEDBACK:")
-        for fb in r['feedback']:
-            lines.append(f"  {fb}")
-            
-        lines.append("-" * 70)
-
-    lines.append("")
-    lines.append("QUICK RANKING SUMMARY")
-    lines.append("=" * 70)
-    lines.append(f"{'Rank':<6} {'Candidate':<40} {'Score':<8} {'Verdict'}")
-    lines.append(f"{'-'*6} {'-'*40} {'-'*8} {'-'*15}")
-    for rank, r in enumerate(results, 1):
-        v = ("Strong" if r["final_pct"] >= 75 else
-             "Moderate" if r["final_pct"] >= 55 else
-             "Developing" if r["final_pct"] >= 35 else "Low")
-        lines.append(f"{rank:<6} {r['name']:<40} {r['final_pct']:<8} {v}")
-    lines.append("=" * 70)
-    
-    return "\n".join(lines)
