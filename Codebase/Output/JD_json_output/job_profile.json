@@ -1,7 +1,7 @@
 {
   "meta": {
     "source_file": "job_description.txt",
-    "processed_at": "2026-04-30 15:47:40",
+    "processed_at": "2026-05-13 07:03:27",
     "sections_detected": [
       "experience_required",
       "eligibility",
@@ -27,17 +27,19 @@
   },
   "required_skills": {
     "technical": {},
+    "soft": [],
     "raw_text": null
   },
   "good_to_have": {
     "technical": {},
+    "soft": [],
     "raw_text": "Ability to adapt and thrive in a fast paced and demanding environment of a young start-up.\nAbility to learn, unlearn and relearn.\nEye for minute details.\nPassion to master new technologies and methodologies.\nGreat analytical and problem-solving skills.\nCTC: 5L\n*4.20 LPA + 80 K Joining Bonus"
   },
   "eligibility": {
     "batch_year": "2026",
     "degrees_required": [
-      "MSC",
       "ME",
+      "MSC",
       "MTECH",
       "MCA"
     ],
@@ -45,8 +47,8 @@
     "raw_text": "2026 Passout Batch Only\ni. MCA/ME/MTech/MSc(Computers) (Candidate should have basic knowledge of Programming)\nMinimum 65% till last semester"
   },
   "experience_required": {
-    "years": 0,
-    "raw_text": "Location: Pune (work from home till further notice)"
+    "raw_text": "Location: Pune (work from home till further notice)",
+    "years_detected": 0
   },
   "benefits": {
     "ctc": null,

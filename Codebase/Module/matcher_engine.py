@@ -1,6 +1,7 @@
 from sentence_transformers import util
-from .config import EDU_LEVELS
+from .config import EDU_LEVELS, WEIGHT_ELIGIB, WEIGHT_SKILLS, WEIGHT_CONTEXT
 from .document_parser import extract_skills_from_text
+from .report_generator import get_category_for_skill
 
 def score_eligibility(jd, resume):
     """Compare Education and Experience fields strictly."""
@@ -105,3 +106,42 @@ def score_semantic_context(model, jd, resume):
     
     sim = util.cos_sim(jd_emb, cand_emb).item()
     return max(0.0, min(1.0, sim))
+
+def run_what_if_simulation(model, jd, resume, missing_skills, matched_skills, req_skills, final_score, elig_score, context_score):
+    top_improvements = []
+    if not missing_skills:
+        return top_improvements
+
+    jd_context = jd.get('responsibilities', {}).get('raw_text') or jd.get('company_info', {}).get('raw_text') or ""
+    jd_context = str(jd_context)
+    jd_emb = model.encode(jd_context, convert_to_tensor=True, show_progress_bar=False) if jd_context.strip() else None
+    
+    cand_base_context = (resume.get('experience', {}).get('raw_text') or "") + " " + (resume.get('projects') or "")
+    req_tech_dict = jd.get('required_skills', {}).get('technical', {})
+    
+    for skill in missing_skills:
+        augmented_context = cand_base_context + f" Proficient in {skill}. Hands-on experience with {skill}."
+        
+        if jd_emb is not None:
+            cand_emb = model.encode(augmented_context, convert_to_tensor=True, show_progress_bar=False)
+            new_context_score = max(0.0, min(1.0, util.cos_sim(jd_emb, cand_emb).item()))
+        else:
+            new_context_score = context_score
+        
+        new_count = len(matched_skills) + 1
+        denom = max(5, min(len(req_skills), 15))
+        new_skill_score = min(1.0, new_count / denom)
+        new_final = (elig_score * WEIGHT_ELIGIB) + (new_skill_score * WEIGHT_SKILLS) + (new_context_score * WEIGHT_CONTEXT)
+        impact = new_final - final_score
+        
+        skill_cat = get_category_for_skill(skill, req_tech_dict)
+                
+        top_improvements.append({
+            "skill": skill,
+            "impact_pct": impact,
+            "new_pct": new_final,
+            "category": skill_cat
+        })
+    
+    top_improvements.sort(key=lambda x: x['impact_pct'], reverse=True)
+    return top_improvements[:5]

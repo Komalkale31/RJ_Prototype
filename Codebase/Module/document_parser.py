@@ -2,8 +2,11 @@ import os
 import re
 import datetime
 import pdfplumber
+import torch
 from sentence_transformers import util
 from .config import SIM_THRESHOLD, MAX_HEADER_LEN, ALL_TECH_SKILLS, SOFT_SKILLS
+from .logger import logger
+from .models import CandidateProfile, JobDescription, MetaInfo, PersonalInfo, SkillSet, EducationInfo, ExperienceInfo, CompanyInfo, RoleSummary, RequirementsInfo, EligibilityInfo, BenefitsInfo
 
 # ── Extraction Helpers ───────────────────────────────────────────────
 
@@ -133,31 +136,54 @@ def detect_sections(lines, canonical_embeddings, model):
     detected_blocks = {}
     current_section = None
     
-    for line in lines:
+    # 1. Gather all potential headers to batch encode them
+    potential_headers = []
+    header_indices = []
+    
+    for i, line in enumerate(lines):
+        line_clean = line.strip()
+        if not line_clean:
+            continue
+            
+        words = line_clean.split()
+        if len(words) <= MAX_HEADER_LEN and (line_clean.isupper() or line_clean.istitle() or line_clean.endswith(':')):
+            potential_headers.append(line_clean)
+            header_indices.append(i)
+            
+    header_mapping = {}
+    if potential_headers:
+        # Batch encode all potential headers at once
+        header_embs = model.encode(potential_headers, convert_to_tensor=True, show_progress_bar=False)
+        
+        # We need to stack canonical embeddings to do a single matrix multiplication
+        sections = list(canonical_embeddings.keys())
+        canon_tensors = torch.stack([canonical_embeddings[sec] for sec in sections])
+        
+        # cosine_sim returns a matrix of shape (num_headers, num_sections)
+        sim_matrix = util.cos_sim(header_embs, canon_tensors)
+        
+        # Find best section for each header
+        for idx, sims in enumerate(sim_matrix):
+            best_score_idx = torch.argmax(sims).item()
+            best_score = sims[best_score_idx].item()
+            
+            if best_score >= SIM_THRESHOLD:
+                orig_line_idx = header_indices[idx]
+                header_mapping[orig_line_idx] = sections[best_score_idx]
+
+    # 2. Build blocks using the mapping
+    for i, line in enumerate(lines):
         line_clean = line.strip()
         if not line_clean:
             continue
             
         is_header = False
-        words = line_clean.split()
-        
-        if len(words) <= MAX_HEADER_LEN and (line_clean.isupper() or line_clean.istitle() or line_clean.endswith(':')):
-            line_emb = model.encode(line_clean, convert_to_tensor=True, show_progress_bar=False)
-            best_score = 0
-            best_section = None
-            
-            for section, can_emb in canonical_embeddings.items():
-                score = util.cos_sim(line_emb, can_emb).item()
-                if score > best_score:
-                    best_score = score
-                    best_section = section
-                    
-            if best_score >= SIM_THRESHOLD:
-                current_section = best_section
-                is_header = True
-                if current_section not in detected_blocks:
-                    detected_blocks[current_section] = []
-                    
+        if i in header_mapping:
+            current_section = header_mapping[i]
+            is_header = True
+            if current_section not in detected_blocks:
+                detected_blocks[current_section] = []
+                
         if current_section and not is_header:
             detected_blocks[current_section].append(line_clean)
             
@@ -185,9 +211,9 @@ def extract_text_from_image_pdf(file_path):
             result = reader.readtext(img, detail=0)
             text += " ".join(result) + "\n"
     except ImportError:
-        print(f"    [!] easyocr or pymupdf not installed. Skipping OCR for {os.path.basename(file_path)}")
+        logger.warning(f"easyocr or pymupdf not installed. Skipping OCR for {os.path.basename(file_path)}")
     except Exception as e:
-        print(f"    [!] OCR Error on {file_path}: {e}")
+        logger.error(f"OCR Error on {file_path}: {e}")
     return text
 
 def read_pdf(file_path):
@@ -199,10 +225,10 @@ def read_pdf(file_path):
                 if page_text:
                     text += page_text + "\n"
     except Exception as e:
-        print(f"Error reading PDF {file_path}: {e}")
+        logger.error(f"Error reading PDF {file_path}: {e}")
         
     if len(text.strip()) < 50:
-        print(f"    [!] Scanned PDF detected. Attempting OCR on {os.path.basename(file_path)}...")
+        logger.info(f"Scanned PDF detected. Attempting OCR on {os.path.basename(file_path)}...")
         text = extract_text_from_image_pdf(file_path)
         
     return text
@@ -227,39 +253,45 @@ def parse_resume(file_path, model, embeddings, schema):
     edu_data = extract_education_info(text)
     years_exp = extract_years_experience(blocks.get("experience", ""))
     
-    profile = {
-        "meta": {
-            "source_file": os.path.basename(file_path),
-            "processed_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "sections_detected": list(blocks.keys())
-        },
-        "personal_info": {
-            "name": name,
-            "email": email,
-            "phone": phone,
-            **socials
-        },
-        "objective_summary": blocks.get("objective_summary"),
-        "skills": {
-            "technical": tech_skills,
-            "soft": soft_skills,
-            "raw_text": blocks.get("skills")
-        },
-        "experience": {
-            "raw_text": blocks.get("experience"),
-            "years_detected": years_exp
-        },
-        "projects": blocks.get("projects"),
-        "specialized_it": blocks.get("specialized_it"),
-        "education": edu_data,
-        "certifications": blocks.get("certifications"),
-        "achievements": blocks.get("achievements"),
-        "research": blocks.get("research"),
-        "activities": blocks.get("activities"),
-        "additional_sections": blocks.get("additional"),
-        "references": blocks.get("references")
-    }
-    return profile
+    profile = CandidateProfile(
+        meta=MetaInfo(
+            source_file=os.path.basename(file_path),
+            processed_at=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            sections_detected=list(blocks.keys())
+        ),
+        personal_info=PersonalInfo(
+            name=name,
+            email=email,
+            phone=phone,
+            linkedin=socials.get('linkedin'),
+            github=socials.get('github'),
+            huggingface=socials.get('huggingface')
+        ),
+        objective_summary=blocks.get("objective_summary"),
+        skills=SkillSet(
+            technical=tech_skills,
+            soft=soft_skills,
+            raw_text=blocks.get("skills")
+        ),
+        experience=ExperienceInfo(
+            raw_text=blocks.get("experience"),
+            years_detected=years_exp
+        ),
+        projects=blocks.get("projects"),
+        specialized_it=blocks.get("specialized_it"),
+        education=EducationInfo(
+            raw_text=edu_data["raw_text"],
+            highest_degree=edu_data["highest_degree"],
+            certifications=edu_data["certifications"]
+        ),
+        certifications=blocks.get("certifications"),
+        achievements=blocks.get("achievements"),
+        research=blocks.get("research"),
+        activities=blocks.get("activities"),
+        additional_sections=blocks.get("additional"),
+        references=blocks.get("references")
+    )
+    return profile.model_dump()
 
 def parse_jd(file_path, model, embeddings, schema):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -277,51 +309,51 @@ def parse_jd(file_path, model, embeddings, schema):
     
     ctc = extract_ctc(blocks.get("benefits", ""))
     
-    profile = {
-        "meta": {
-            "source_file": os.path.basename(file_path),
-            "processed_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "sections_detected": list(blocks.keys())
-        },
-        "company_info": {
-            "name": company_name,
-            "location": company_loc,
-            "raw_text": blocks.get("company_info")
-        },
-        "role_summary": {
-            "title": blocks.get("role_summary", "").split('\n')[0] if blocks.get("role_summary") else "Unknown",
-            "raw_text": blocks.get("role_summary")
-        },
-        "responsibilities": {
-            "key_points": [],
-            "raw_text": blocks.get("responsibilities")
-        },
-        "required_skills": {
-            "technical": req_tech,
-            "raw_text": blocks.get("required_skills")
-        },
-        "good_to_have": {
-            "technical": extract_skills_from_text(blocks.get("good_to_have", ""))[0],
-            "raw_text": blocks.get("good_to_have")
-        },
-        "eligibility": {
-            "batch_year": batch,
-            "degrees_required": degrees,
-            "min_percentage": min_pct,
-            "raw_text": blocks.get("eligibility")
-        },
-        "experience_required": {
-            "years": extract_years_experience(blocks.get("experience_required", "")),
-            "raw_text": blocks.get("experience_required")
-        },
-        "benefits": {
-            "ctc": ctc,
-            "raw_text": blocks.get("benefits")
-        },
-        "domains": [],
-        "process": blocks.get("process"),
-        "expectations": blocks.get("expectations"),
-        "work_environment": blocks.get("work_environment"),
-        "legal_closing": blocks.get("legal_closing")
-    }
-    return profile
+    profile = JobDescription(
+        meta=MetaInfo(
+            source_file=os.path.basename(file_path),
+            processed_at=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            sections_detected=list(blocks.keys())
+        ),
+        company_info=CompanyInfo(
+            name=company_name,
+            location=company_loc,
+            raw_text=blocks.get("company_info")
+        ),
+        role_summary=RoleSummary(
+            title=blocks.get("role_summary", "").split('\n')[0] if blocks.get("role_summary") else "Unknown",
+            raw_text=blocks.get("role_summary")
+        ),
+        responsibilities=RequirementsInfo(
+            key_points=[],
+            raw_text=blocks.get("responsibilities")
+        ),
+        required_skills=SkillSet(
+            technical=req_tech,
+            raw_text=blocks.get("required_skills")
+        ),
+        good_to_have=SkillSet(
+            technical=extract_skills_from_text(blocks.get("good_to_have", ""))[0],
+            raw_text=blocks.get("good_to_have")
+        ),
+        eligibility=EligibilityInfo(
+            batch_year=batch,
+            degrees_required=degrees,
+            min_percentage=min_pct,
+            raw_text=blocks.get("eligibility")
+        ),
+        experience_required=ExperienceInfo(
+            years=extract_years_experience(blocks.get("experience_required", "")),
+            raw_text=blocks.get("experience_required")
+        ),
+        benefits=BenefitsInfo(
+            ctc=ctc,
+            raw_text=blocks.get("benefits")
+        ),
+        domains=[],
+        process=blocks.get("process"),
+        expectations=blocks.get("expectations"),
+        work_environment=blocks.get("work_environment"),
+        legal_closing=blocks.get("legal_closing")
+    )
+    return profile.model_dump()

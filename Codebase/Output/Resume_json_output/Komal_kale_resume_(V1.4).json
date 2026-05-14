@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "source_file": "Komal_kale_resume_(V1.4).pdf",
+    "processed_at": "2026-05-13 07:03:30",
+    "sections_detected": [
+      "objective_summary",
+      "skills",
+      "projects",
+      "education",
+      "research",
+      "achievements"
+    ]
+  },
+  "personal_info": {
+    "name": "Komal Kale",
+    "email": "komalkale31.03@gmail.com",
+    "phone": "+919156437564",
+    "linkedin": null,
+    "github": null,
+    "huggingface": null
+  },
+  "objective_summary": "Focused and enthusiastic M.Sc. Data Science student with strong knowledge of AI, Machine Learning, and Deep Learning. Skilled in using data to find patterns, build models,\nand create useful solutions. Confident in applying classroom learning to real-world projects. Looking for an opportunity to grow and contribute to data-driven projects in a\nprofessional setup.",
+  "skills": {
+    "technical": {
+      "Programming Languages": [
+        "python",
+        "r"
+      ],
+      "Data Science & Machine Learning": [
+        "classification",
+        "clustering",
+        "computer vision",
+        "data science",
+        "deep learning",
+        "machine learning",
+        "natural language processing",
+        "neural networks",
+        "nlp",
+        "regression",
+        "transfer learning"
+      ],
+      "ML/DL Frameworks & Tools": [
+        "keras",
+        "opencv",
+        "tensorflow"
+      ],
+      "BI & Data Visualization": [
+        "matplotlib",
+        "power bi"
+      ],
+      "Databases": [
+        "mongodb",
+        "mysql",
+        "postgres",
+        "postgresql"
+      ],
+      "DevOps & Infrastructure": [
+        "github"
+      ],
+      "Web & App Frameworks": [
+        "streamlit"
+      ],
+      "Data Libraries": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    "soft": [
+      "leadership"
+    ],
+    "raw_text": "• Programming Languages: Python, R, and tools like Microsoft Excel, Google Sheets and Google App Script.\n• Machine Learning: ML Algorithms, SVMs, Logistic and Linear Regression, Clustering and Ensemble methods.\n• Deep Learning: Neural Networks (ANN, CNN, RNN), Natural Language Processing (NLP), Computer Vision\n• Visualizing Tools: Power BI, Jupyter Notebook, Google Colab, Excel\n• Data Science Tools: Pandas, NumPy, Matplotlib, TensorFlow.\n• Database & Big Data: PostgreSQL, MySQL, MongoDB."
+  },
+  "experience": {
+    "raw_text": null,
+    "years_detected": 0
+  },
+  "projects": "1. IoT-Based Face Detection and Recognition System\nIndira College of Commerce and Science — Aug 2022 – July 2023\n• Developed a real-time face detection and recognition system integrating IoT and Computer Vision technologies using Python and ESP-32 modules.\n• Designed the solution as a proof of concept (POC) to reduce hardware costs and enable efficient real-time image processing through IoT integration.\n• Tech Stack: Python, OpenCV, ESP-32, IoT Integration\n2. Solar Defect Detection System\n• Designed transfer learning pipeline (EfficientNetB0) with custom head + L2 regularization\n• Engineered augmentation pipeline improving robustness to environmental noise\n• Integrated MLflow + DagsHub for experiment tracking & artifact versioning\n• Used EarlyStopping + ReduceLROnPlateau for efficient training\n• Built Streamlit app for inference & probability outputs\n• Yoga_AI: Smart Recognition of Yoga Postures using Convolutional Neural Networks (CNNs)\n• Developed a deep learning model for automated yoga pose classification using CNNs in TensorFlow and Keras.\n• Implemented image preprocessing (resizing, normalization, augmentation) and achieved high classification accuracy across multiple yoga poses.\n• Evaluated model using confusion matrix and performance metrics.\n• The system demonstrates potential for AI-driven virtual yoga assistants, posture correction, and wellness applications\nDepartment of Technology CGPA: 9.0\nMasters in Data science (MSc DS) (Pursuing)",
+  "specialized_it": null,
+  "education": {
+    "raw_text": "Komal Kale\nPune | +91 9156437564 | komalkale31.03@gmail.com | LinkedIn | GitHub\nSUMMARY\nFocused and enthusiastic M.Sc. Data Science student with strong knowledge of AI, Machine Learning, and Deep Learning. Skilled in using data to find patterns, build models,\nand create useful solutions. Confident in applying classroom learning to real-world projects. Looking for an opportunity to grow and contribute to data-driven projects in a\nprofessional setup.\nTECHNICAL SKILLS\n• Programming Languages: Python, R, and tools like Microsoft Excel, Google Sheets and Google App Script.\n• Machine Learning: ML Algorithms, SVMs, Logistic and Linear Regression, Clustering and Ensemble methods.\n• Deep Learning: Neural Networks (ANN, CNN, RNN), Natural Language Processing (NLP), Computer Vision\n• Visualizing Tools: Power BI, Jupyter Notebook, Google Colab, Excel\n• Data Science Tools: Pandas, NumPy, Matplotlib, TensorFlow.\n• Database & Big Data: PostgreSQL, MySQL, MongoDB.\nPROJECTS\n1. IoT-Based Face Detection and Recognition System\nIndira College of Commerce and Science — Aug 2022 – July 2023\n• Developed a real-time face detection and recognition system integrating IoT and Computer Vision technologies using Python and ESP-32 modules.\n• Designed the solution as a proof of concept (POC) to reduce hardware costs and enable efficient real-time image processing through IoT integration.\n• Tech Stack: Python, OpenCV, ESP-32, IoT Integration\n2. Solar Defect Detection System\n• Designed transfer learning pipeline (EfficientNetB0) with custom head + L2 regularization\n• Engineered augmentation pipeline improving robustness to environmental noise\n• Integrated MLflow + DagsHub for experiment tracking & artifact versioning\n• Used EarlyStopping + ReduceLROnPlateau for efficient training\n• Built Streamlit app for inference & probability outputs\n3. Yoga Project\n• Yoga_AI: Smart Recognition of Yoga Postures using Convolutional Neural Networks (CNNs)\n• Developed a deep learning model for automated yoga pose classification using CNNs in TensorFlow and Keras.\n• Implemented image preprocessing (resizing, normalization, augmentation) and achieved high classification accuracy across multiple yoga poses.\n• Evaluated model using confusion matrix and performance metrics.\n• The system demonstrates potential for AI-driven virtual yoga assistants, posture correction, and wellness applications\nEDUCATION\nIndira College of Commerce and Science, Wakad, Pune. Aug 2021- May 2024\nBachelors in computer science (BSc CS) CGPA: 9.4\nSavitribai Phule Pune University, Pune. Aug2024 - July 2026\nDepartment of Technology CGPA: 9.0\nMasters in Data science (MSc DS) (Pursuing)\nRESEARCH & PUBLICATIONS\nTitle: IoT-Based Computer Vision System for Real-time Face Recognition and Detection.\nISSN: 2583-6404 Focus: Computer Vision, IoT Integration, Real-time Processing.\n• Focus: Computer Vision, IoT Integration, Real-time Processing, Cost Reduction.\n• System Goal: Implemented a real-time system using Python libraries (Computer Vision) and IoT tools to demonstrate a proof-of-concept (PoC) for reducing\nhardware costing by utilizing specific modules like the ESP-32.\n• Key Finding: The PoC confirmed the technical viability of using IoT integration to reduce the hardware cost of System.\nKEY ACHIEVEMENTS AS A FRESHER-\n• Achieved CGPA of 9.04 (Grade: A+) in bachelor’s degree.\n● Published research paper on IoT-based computer vision systems.\n• Hands-on experience with enterprise-level AI/ML project implementation.\n• Led and hosted college-level fests as EMC (Event Management Committee) Head for 2 consecutive years, successfully managing end-to-end event execution,\ncoordination, and team leadership.",
+    "highest_degree": "MSC",
+    "certifications": []
+  },
+  "certifications": null,
+  "achievements": "• Achieved CGPA of 9.04 (Grade: A+) in bachelor’s degree.\n● Published research paper on IoT-based computer vision systems.\n• Hands-on experience with enterprise-level AI/ML project implementation.\n• Led and hosted college-level fests as EMC (Event Management Committee) Head for 2 consecutive years, successfully managing end-to-end event execution,\ncoordination, and team leadership.",
+  "research": "Title: IoT-Based Computer Vision System for Real-time Face Recognition and Detection.\nISSN: 2583-6404 Focus: Computer Vision, IoT Integration, Real-time Processing.\n• Focus: Computer Vision, IoT Integration, Real-time Processing, Cost Reduction.\n• System Goal: Implemented a real-time system using Python libraries (Computer Vision) and IoT tools to demonstrate a proof-of-concept (PoC) for reducing\nhardware costing by utilizing specific modules like the ESP-32.\n• Key Finding: The PoC confirmed the technical viability of using IoT integration to reduce the hardware cost of System.",
+  "activities": null,
+  "additional_sections": null,
+  "references": null
+}

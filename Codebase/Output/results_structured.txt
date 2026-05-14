@@ -1,5 +1,5 @@
 INTELLIGENT RESUME-JD MATCHING REPORT
-Generated: 2026-04-30 15:48:41
+Generated: 2026-05-13 07:05:55
 Model: all-mpnet-base-v2
 Scoring: 40% Semantic + 40% Skill + 20% Education
 ======================================================================
@@ -15,11 +15,11 @@ SKILLS YOU ARE MISSING:
   adls, airbyte, apache nifi, azure, bfsi, bigquery, business intelligence, computer vision, dashboards, data analytics, data engineering, data pipeline, data pipelines, data warehousing, domo, ecommerce, elt, fivetran, looker, machine learning, manufacturing, media, microsoft azure, nifi, pharmaceuticals, power bi, qlik, qlik sense, redshift, speech recognition, sports, talend, telecom, vector db, vector dbs, vertex al
 
 YOUR GROWTH PATH (What to Learn Next):
-  #1  Learn Domo                   +2.7%  (72.0% -> 74.6%)
-  #2  Learn Vector Db              +2.7%  (72.0% -> 74.6%)
-  #3  Learn Talend                 +2.7%  (72.0% -> 74.6%)
-  #4  Learn Manufacturing          +2.7%  (72.0% -> 74.6%)
-  #5  Learn Data Analytics         +2.7%  (72.0% -> 74.6%)
+  #1  Learn Bfsi                   +2.7%  (72.0% -> 74.6%)
+  #2  Learn Machine Learning       +2.7%  (72.0% -> 74.6%)
+  #3  Learn Data Pipelines         +2.7%  (72.0% -> 74.6%)
+  #4  Learn Fivetran               +2.7%  (72.0% -> 74.6%)
+  #5  Learn Microsoft Azure        +2.7%  (72.0% -> 74.6%)
 
   Potential score with all above: ~85.5%
 
@@ -32,8 +32,8 @@ PERSONALIZED FEEDBACK:
   You are a MODERATE fit for this role. You have a good foundation but there are specific areas where upskilling would significantly improve your chances.
   YOUR STRENGTH: Your strongest area is 'Programming Languages' - specifically bash, python, shell, sql. This gives you a solid technical base.
   KEY GAP: The biggest gap in your profile is in 'Data Engineering & ETL' where you are missing 10 skills that the JD specifically asks for.
-  HIGHEST IMPACT ACTION: If you learn 'Domo', your match score is projected to jump from 72.0% -> 74.6% (+2.7%). This skill falls under 'BI & Data Visualization'.
-  NEXT STEPS: After that, focus on 'Vector Db' (+2.7%) and 'Talend' (+2.7%). Together, these three skills would make you a significantly stronger candidate.
+  HIGHEST IMPACT ACTION: If you learn 'Bfsi', your match score is projected to jump from 72.0% -> 74.6% (+2.7%). This skill falls under 'Domain Knowledge'.
+  NEXT STEPS: After that, focus on 'Machine Learning' (+2.7%) and 'Data Pipelines' (+2.7%). Together, these three skills would make you a significantly stronger candidate.
 ----------------------------------------------------------------------
 
 RANK #2
@@ -197,6 +197,38 @@ PERSONALIZED FEEDBACK:
   NEXT STEPS: After that, focus on 'Data Warehousing' (+4.0%) and 'Data Pipelines' (+3.8%). Together, these three skills would make you a significantly stronger candidate.
 ----------------------------------------------------------------------
 
+RANK #7
+Candidate : Komal Kale
+Score     : 40.3%  [DEVELOPING MATCH]
+
+SKILLS YOU HAVE (that the JD wants):
+  computer vision, machine learning, power bi, python
+
+SKILLS YOU ARE MISSING:
+  adls, airbyte, airflow, apache nifi, aws, azure, bfsi, bigquery, business intelligence, dashboard, dashboards, data analytics, data engineering, data pipeline, data pipelines, data warehousing, domo, ecommerce, elt, etl, fivetran, gcp, langchain, llms, looker, manufacturing, media, microsoft azure, nifi, pharmaceuticals, prediction, pyspark, pytorch, qlik, qlik sense, rag, redshift, spark, speech recognition, sports, tableau, talend, telecom, vector db, vector dbs, vertex al
+
+YOUR GROWTH PATH (What to Learn Next):
+  #1  Learn Business Intelligence  +4.1%  (40.3% -> 44.4%)
+  #2  Learn Data Warehousing       +3.7%  (40.3% -> 44.0%)
+  #3  Learn Data Pipelines         +3.7%  (40.3% -> 44.0%)
+  #4  Learn Vector Dbs             +3.5%  (40.3% -> 43.8%)
+  #5  Learn Ecommerce              +3.5%  (40.3% -> 43.8%)
+
+  Potential score with all above: ~58.8%
+
+PERSONALIZED FEEDBACK:
+  SCORE BREAKDOWN:
+    - Technical Skills  :  26.7% (Weight 40%)
+    - Project Context   :  24.0% (Weight 40%)
+    - Eligibility       : 100.0% (Weight 20%)
+  ----------------------------------------------------------------------
+  You are currently a DEVELOPING fit for this role. While your background shows some relevance, focused skill development in key areas is needed to become competitive.
+  YOUR STRENGTH: Your strongest area is 'Data Science & Machine Learning' - specifically classification, clustering, computer vision, data science. This gives you a solid technical base.
+  KEY GAP: The biggest gap in your profile is in 'Data Engineering & ETL' where you are missing 14 skills that the JD specifically asks for.
+  HIGHEST IMPACT ACTION: If you learn 'Business Intelligence', your match score is projected to jump from 40.3% -> 44.4% (+4.1%). This skill falls under 'BI & Data Visualization'.
+  NEXT STEPS: After that, focus on 'Data Warehousing' (+3.7%) and 'Data Pipelines' (+3.7%). Together, these three skills would make you a significantly stronger candidate.
+----------------------------------------------------------------------
+
 QUICK RANKING SUMMARY
 ======================================================================
 Rank   Candidate                                Score    Verdict
@@ -207,4 +239,5 @@ Rank   Candidate                                Score    Verdict
 4      Tejaswini Adasule                        49.2     Developing
 5      Kapil Thakur                             45.1     Developing
 6      Komal Kale                               44.9     Developing
+7      Komal Kale                               40.3     Developing
 ======================================================================
